@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  .divHeader {
+    padding: 30px;
+    text-align: center;
+    background: #0be7bb;
+    color: rgb(36, 17, 121);
+  }
+
+  .divNavbar {
+    display: flex;
+    background-color: #333;
+    
+  }
+  
+  .divNavbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .divMain {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .divInformation {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column background: #1abc9c;*/
+  .divForm {
+    flex: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  .divNavbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+  .levo
+  {
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 700px) {
+    .divNavbar {   
+      flex-direction: column;
+    }
+    .levo {
+      margin-left: 0;
+    }
+    .welcomeEl
+    {
+      margin-left: 0;
+    }
+  }
+
+  .formCon
+  {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .formCon * {
+    box-sizing: border-box;
+  }
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  letter-spacing: .09em;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='radio']),
+.flex-outer li textarea {
+  padding: 15px;
+  
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.errorP
+{
+  background-color: darkred;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 2px;
+}
+.welcomeEl
+{
+  color: white;
+}
+
+.sucP
+{
+  background-color: rgb(35, 175, 7);
+  color: white;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 2px;
+}
+
+#kalorijeProgres
+{
+  width: 100%;
+  
+  background-color: #ddd;
+}
+
+#kalorijeBar
+{
+  width: 0%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  line-height:30px;
+  color: white;
+}
+
+#bmiProgres
+{
+  width: 100%;
+  background-color: #ddd;
+}
+
+
+#bmiBar
+{
+  width: 0%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  line-height:30px;
+  color: white;
+}
+h1
+{
+  font-size: 50px;
+}
+#bodyfatProgres
+{
+  width: 100%;
+  background-color: #ddd;
+}
+
+
+#bodyfatBar
+{
+  width: 0%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  line-height:30px;
+  color: white;
+}
+
+table, th, td
+{
+    border:  1px solid black;
+}
+
+table
+{
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+}
+
+th
+{
+    background-color: rgb(62, 164, 223);
+    color: white;
+}
+
+.divTabela
+{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 5px;
+}
